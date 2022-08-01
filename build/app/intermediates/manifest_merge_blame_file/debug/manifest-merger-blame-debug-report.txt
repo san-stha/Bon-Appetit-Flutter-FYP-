@@ -1,0 +1,130 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.fyp"
+4    android:versionCode="1"
+5    android:versionName="1.0.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+9        android:targetSdkVersion="31" />
+10    <!--
+11         Flutter needs it to communicate with the running application
+12         to allow setting breakpoints, to provide hot reload, etc.
+13    -->
+14    <uses-permission android:name="android.permission.INTERNET" />
+14-->E:\Final Year Project\Fyp flutter\android\app\src\debug\AndroidManifest.xml:6:5-66
+14-->E:\Final Year Project\Fyp flutter\android\app\src\debug\AndroidManifest.xml:6:22-64
+15    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+15-->E:\Final Year Project\Fyp flutter\android\app\src\main\AndroidManifest.xml:3:5-79
+15-->E:\Final Year Project\Fyp flutter\android\app\src\main\AndroidManifest.xml:3:22-76
+16    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+16-->E:\Final Year Project\Fyp flutter\android\app\src\main\AndroidManifest.xml:4:5-81
+16-->E:\Final Year Project\Fyp flutter\android\app\src\main\AndroidManifest.xml:4:22-78
+17    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+17-->E:\Final Year Project\Fyp flutter\android\app\src\main\AndroidManifest.xml:5:5-85
+17-->E:\Final Year Project\Fyp flutter\android\app\src\main\AndroidManifest.xml:5:22-82
+18    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+18-->[:geolocator_android] E:\Final Year Project\Fyp flutter\build\geolocator_android\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-77
+18-->[:geolocator_android] E:\Final Year Project\Fyp flutter\build\geolocator_android\intermediates\library_manifest\debug\AndroidManifest.xml:7:22-74
+19
+20    <application
+20-->E:\Final Year Project\Fyp flutter\android\app\src\main\AndroidManifest.xml:6:4-43:19
+21        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+21-->[androidx.core:core:1.2.0] C:\Users\CSE\.gradle\caches\transforms-2\files-2.1\544eab86e7823cb4f6f6bbcd34094c52\core-1.2.0\AndroidManifest.xml:24:18-86
+22        android:debuggable="true"
+23        android:icon="@mipmap/ic_launcher"
+23-->E:\Final Year Project\Fyp flutter\android\app\src\main\AndroidManifest.xml:8:9-43
+24        android:label="fyp" >
+24-->E:\Final Year Project\Fyp flutter\android\app\src\main\AndroidManifest.xml:7:9-28
+25        <activity
+25-->E:\Final Year Project\Fyp flutter\android\app\src\main\AndroidManifest.xml:9:9-37:20
+26            android:name="com.example.fyp.MainActivity"
+26-->E:\Final Year Project\Fyp flutter\android\app\src\main\AndroidManifest.xml:10:13-41
+27            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+27-->E:\Final Year Project\Fyp flutter\android\app\src\main\AndroidManifest.xml:13:13-163
+28            android:hardwareAccelerated="true"
+28-->E:\Final Year Project\Fyp flutter\android\app\src\main\AndroidManifest.xml:14:13-47
+29            android:launchMode="singleTop"
+29-->E:\Final Year Project\Fyp flutter\android\app\src\main\AndroidManifest.xml:11:13-43
+30            android:theme="@style/LaunchTheme"
+30-->E:\Final Year Project\Fyp flutter\android\app\src\main\AndroidManifest.xml:12:13-47
+31            android:windowSoftInputMode="adjustResize" >
+31-->E:\Final Year Project\Fyp flutter\android\app\src\main\AndroidManifest.xml:15:13-55
+32
+33            <!--
+34                 Specifies an Android theme to apply to this Activity as soon as
+35                 the Android process has started. This theme is visible to the user
+36                 while the Flutter UI initializes. After that, this theme continues
+37                 to determine the Window background behind the Flutter UI.
+38            -->
+39            <meta-data
+39-->E:\Final Year Project\Fyp flutter\android\app\src\main\AndroidManifest.xml:20:13-23:17
+40                android:name="io.flutter.embedding.android.NormalTheme"
+40-->E:\Final Year Project\Fyp flutter\android\app\src\main\AndroidManifest.xml:21:15-70
+41                android:resource="@style/NormalTheme" />
+41-->E:\Final Year Project\Fyp flutter\android\app\src\main\AndroidManifest.xml:22:15-52
+42            <!--
+43                 Displays an Android View that continues showing the launch screen
+44                 Drawable until Flutter paints its first frame, then this splash
+45                 screen fades out. A splash screen is useful to avoid any visual
+46                 gap between the end of Android's launch screen and the painting of
+47                 Flutter's first frame.
+48            -->
+49            <meta-data
+49-->E:\Final Year Project\Fyp flutter\android\app\src\main\AndroidManifest.xml:29:13-32:17
+50                android:name="io.flutter.embedding.android.SplashScreenDrawable"
+50-->E:\Final Year Project\Fyp flutter\android\app\src\main\AndroidManifest.xml:30:15-79
+51                android:resource="@drawable/launch_background" />
+51-->E:\Final Year Project\Fyp flutter\android\app\src\main\AndroidManifest.xml:31:15-61
+52
+53            <intent-filter>
+53-->E:\Final Year Project\Fyp flutter\android\app\src\main\AndroidManifest.xml:33:13-36:29
+54                <action android:name="android.intent.action.MAIN" />
+54-->E:\Final Year Project\Fyp flutter\android\app\src\main\AndroidManifest.xml:34:17-68
+54-->E:\Final Year Project\Fyp flutter\android\app\src\main\AndroidManifest.xml:34:25-66
+55
+56                <category android:name="android.intent.category.LAUNCHER" />
+56-->E:\Final Year Project\Fyp flutter\android\app\src\main\AndroidManifest.xml:35:17-76
+56-->E:\Final Year Project\Fyp flutter\android\app\src\main\AndroidManifest.xml:35:27-74
+57            </intent-filter>
+58        </activity>
+59        <!--
+60             Don't delete the meta-data below.
+61             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+62        -->
+63        <meta-data
+63-->E:\Final Year Project\Fyp flutter\android\app\src\main\AndroidManifest.xml:40:9-42:33
+64            android:name="flutterEmbedding"
+64-->E:\Final Year Project\Fyp flutter\android\app\src\main\AndroidManifest.xml:41:13-44
+65            android:value="2" />
+65-->E:\Final Year Project\Fyp flutter\android\app\src\main\AndroidManifest.xml:42:13-30
+66
+67        <service
+67-->[:geolocator_android] E:\Final Year Project\Fyp flutter\build\geolocator_android\intermediates\library_manifest\debug\AndroidManifest.xml:10:9-14:56
+68            android:name="com.baseflow.geolocator.GeolocatorLocationService"
+68-->[:geolocator_android] E:\Final Year Project\Fyp flutter\build\geolocator_android\intermediates\library_manifest\debug\AndroidManifest.xml:11:13-77
+69            android:enabled="true"
+69-->[:geolocator_android] E:\Final Year Project\Fyp flutter\build\geolocator_android\intermediates\library_manifest\debug\AndroidManifest.xml:12:13-35
+70            android:exported="false"
+70-->[:geolocator_android] E:\Final Year Project\Fyp flutter\build\geolocator_android\intermediates\library_manifest\debug\AndroidManifest.xml:13:13-37
+71            android:foregroundServiceType="location" />
+71-->[:geolocator_android] E:\Final Year Project\Fyp flutter\build\geolocator_android\intermediates\library_manifest\debug\AndroidManifest.xml:14:13-53
+72
+73        <activity
+73-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\CSE\.gradle\caches\transforms-2\files-2.1\7c879cb157fab2c9a5d74c3d70fd64e3\jetified-play-services-base-17.0.0\AndroidManifest.xml:23:9-26:75
+74            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+74-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\CSE\.gradle\caches\transforms-2\files-2.1\7c879cb157fab2c9a5d74c3d70fd64e3\jetified-play-services-base-17.0.0\AndroidManifest.xml:24:13-79
+75            android:exported="false"
+75-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\CSE\.gradle\caches\transforms-2\files-2.1\7c879cb157fab2c9a5d74c3d70fd64e3\jetified-play-services-base-17.0.0\AndroidManifest.xml:25:13-37
+76            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+76-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\CSE\.gradle\caches\transforms-2\files-2.1\7c879cb157fab2c9a5d74c3d70fd64e3\jetified-play-services-base-17.0.0\AndroidManifest.xml:26:13-72
+77
+78        <meta-data
+78-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\CSE\.gradle\caches\transforms-2\files-2.1\3c8e7eb3d21ac94d08f658f6d8a1c9f3\jetified-play-services-basement-17.0.0\AndroidManifest.xml:23:9-25:69
+79            android:name="com.google.android.gms.version"
+79-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\CSE\.gradle\caches\transforms-2\files-2.1\3c8e7eb3d21ac94d08f658f6d8a1c9f3\jetified-play-services-basement-17.0.0\AndroidManifest.xml:24:13-58
+80            android:value="@integer/google_play_services_version" />
+80-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\CSE\.gradle\caches\transforms-2\files-2.1\3c8e7eb3d21ac94d08f658f6d8a1c9f3\jetified-play-services-basement-17.0.0\AndroidManifest.xml:25:13-66
+81    </application>
+82
+83</manifest>
